@@ -5,7 +5,7 @@ import streamlit as st
 from babel.numbers import format_currency
 sns.set(style='dark')
 
-sewasepedajam_df=pd.read_csv("dashboard/all_data.csv")
+sewasepedajam_df=pd.read_csv("https://raw.githubusercontent.com/adryansyah29/bike-rental-streamlit/main/all_data.csv)
 sewasepedajam_df.head()
 
 # Menyiapkan daily_rent_df
