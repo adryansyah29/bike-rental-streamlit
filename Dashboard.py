@@ -37,8 +37,9 @@ def buat_musim_sewa_df(df):
 # Menyiapkan monthly_rent_df
 def buat_bulanan_sewa_df(df):
     bulanan_sewa_df = df.groupby(by='mnth').agg({
-        'cnt': 'sum'
-    }).reset_index()
+        'cnt': 'sum'})
+ 
+    
     
     return bulanan_sewa_df
 
@@ -123,7 +124,7 @@ with col3:
 st.subheader('Penyewa Dalam Bulanan')
 fig, ax = plt.subplots(figsize=(24, 8))
 ax.plot(
-    bulanan_sewa_df['mnth'],
+    bulanan_sewa_df.index,
     bulanan_sewa_df['cnt'],
     marker='o', 
     linewidth=2,
