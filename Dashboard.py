@@ -144,7 +144,7 @@ sns.barplot(
     x='season',
     y='registered',
     data=season_rent_df,
-    label='Registered',
+    label='Terdaftar',
     color='tab:blue',
     ax=ax
 )
@@ -153,7 +153,7 @@ sns.barplot(
     x='season',
     y='casual',
     data=season_rent_df,
-    label='Casual',
+    label='Biasa',
     color='tab:orange',
     ax=ax
 )
