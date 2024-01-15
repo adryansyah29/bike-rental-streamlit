@@ -2,3 +2,4 @@ pandas
 matplotlib
 seaborn
 streamlit
+Babel==2.6.0
